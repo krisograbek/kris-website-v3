@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
-import { Blog } from '../../components';
+import { ArticleCard, Blog } from '../../components';
 import { getAllArticles } from '../api/api';
 
 const BlogHome = ({ allArticles }) => {
@@ -10,14 +10,7 @@ const BlogHome = ({ allArticles }) => {
       <Blog />
       {allArticles.map((article) => (
         <div key={article.slug}>
-          <p>
-            <Link as={`/blog/${article.slug}`} href="/blog/[slug]">
-              <a className="hover:underline">{article.title}</a>
-            </Link>
-          </p>
-          <p>{article.date}</p>
-          <p>{article.author.name}</p>
-          <div>---</div>
+          <ArticleCard article={article} />
         </div>
       ))}
 
