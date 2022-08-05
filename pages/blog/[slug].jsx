@@ -7,7 +7,6 @@ const ArticlePage = ({ article }) => {
   return (
     <div className='py-32'>
       <ArticleDetails article={article} />
-      {/* {article.title} */}
     </div>
   )
 }
