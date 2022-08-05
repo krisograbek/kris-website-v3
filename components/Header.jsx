@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 
 const categories = [
-  { slug: "about", name: "About" },
-  { slug: "projects", name: "Projects" },
   { slug: "blog", name: "Blog" },
-  // { slug: "articles", name: "Articles" },
+  { slug: "projects", name: "Projects" },
+  { slug: "about", name: "About" },
   // { slug: "journal", name: "Journal" },
+  // { slug: "fav-quotes", name: "Favorite Quotes" },
 ]
 
 // this implementation can be improved by creating a hook (eg. useClickOutsideMenu)
