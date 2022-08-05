@@ -72,9 +72,11 @@ const Header = () => {
         </button>
         <ul className='hidden md:flex gap-8 p-2'>
           {categories.map((category) => (
-            <li className=''>
-              {category.name}
-            </li>
+            <Link key={category.slug} href={`/${category.slug}`} >
+              <li className='cursor-pointer'>
+                {category.name}
+              </li>
+            </Link>
           ))}
         </ul>
         <ul ref={menuRef} className={showMenu ? 'flex flex-col items-center fixed inset-0 top-12 left-1/4 bg-gray-300 pt-8 md:hidden' : 'hidden'}>
@@ -89,7 +91,7 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-    </div>
+    </div >
   )
 }
 
