@@ -1,17 +1,13 @@
 import Link from 'next/link';
 import React from 'react'
+import ArticleHeader from './ArticleHeader';
+import CoverImage from './CoverImage';
 
 const ArticleCard = ({ article }) => {
   return (
     <div>
-      <p>
-        <Link as={`/blog/${article.slug}`} href="/blog/[slug]">
-          <a className="hover:underline">{article.title}</a>
-        </Link>
-      </p>
-      <p>{article.date}</p>
-      <p>{article.author.name}</p>
-      <div>---</div>
+      <CoverImage title={article.title} src={article.coverImage} slug={article.slug} />
+      <ArticleHeader title={article.title} author={article.author} slug={article.slug} />
     </div>
   )
 }

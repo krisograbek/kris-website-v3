@@ -5,9 +5,9 @@ coverImage: '/assets/blog/action-vs-motion/cover.jpg'
 date: '2022-01-20'
 author:
   name: Kris
-  picture: '/me_gray.jpeg'
+  picture: '/me_gray.JPG'
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: '/assets/blog/action-vs-motion/cover.jpg'
 ---
 
 

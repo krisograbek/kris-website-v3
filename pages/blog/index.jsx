@@ -4,7 +4,6 @@ import { ArticleCard, Blog } from '../../components';
 import { getAllArticles } from '../api/api';
 
 const BlogHome = ({ allArticles }) => {
-  console.log(allArticles)
   return (
     <div className="flex flex-col min-h-screen items-center py-40">
       <Blog />
