@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <div className="mx-auto px-10 mb-8">
-      <div className='fixed text-white border-blue-300 border-b flex justify-between px-20 py-2 items-center w-full font-semibold '>
+      <div className='text-white border-blue-300 border-b flex justify-between px-20 py-2 items-center w-full font-semibold '>
         <Link href="/">
           <div className='cursor-pointer'>
             Home
