@@ -1,11 +1,11 @@
+import moment from 'moment';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
-import ArticleHeader from './ArticleHeader';
-import Avatar from './Avatar';
-import CoverImage from './CoverImage';
 
 const ArticleCard = ({ article }) => {
+  const parseDate = dateStr => (
+    new Date(dateStr).toLocaleDateString('en-US', { day: "numeric", month: 'long', year: 'numeric' })
+  )
   return (
     <div className='bg-white shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8'>
       <div className='relative overflow-hidden shadow-md pb-[20rem] mb-6'>
@@ -27,7 +27,10 @@ const ArticleCard = ({ article }) => {
         <div className="block text-center items-center justify-center mb-3 md:mb-6 w-full">
           <div className="flex items-center justify-center">
             <Image src={article.author.picture} className="rounded-full" width="40" height="40" alt={article.author.name} />
-            <div className="inline text-xl font-bold pl-4">{article.author.name}</div>
+            <div className="inline font-semibold pl-4">{article.author.name}</div>
+          </div>
+          <div className='pt-4'>
+            {parseDate(article.date)}
           </div>
         </div>
       </div>

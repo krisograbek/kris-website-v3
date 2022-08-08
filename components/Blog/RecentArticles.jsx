@@ -11,3 +11,5 @@ const RecentArticles = () => {
 }
 
 export default RecentArticles;
+
+// add getRecentArticles...
