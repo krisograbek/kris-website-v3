@@ -1,9 +1,20 @@
 import React from 'react'
+import ArticleCard from './ArticleCard';
+import RecentArticles from './RecentArticles';
 
-const Blog = () => {
+const Blog = ({ articles }) => {
   return (
-    <div>
-      Articles
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className='lg:col-span-8 col-span-1'>
+        {articles.map((article) => (
+          <div key={article.slug}>
+            <ArticleCard article={article} />
+          </div>
+        ))}
+      </div>
+      <div className='lg:col-span-4 col-span-1'>
+        <RecentArticles />
+      </div>
     </div>
   )
 }

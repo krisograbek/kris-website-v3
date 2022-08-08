@@ -10,7 +10,7 @@ const CoverImage = ({ title, src, slug }) => {
     />
   )
   return (
-    <div className="sm:mx-0">
+    <div className="object-top absolute h-80 w-full object-cover shadow-lg rounded-t-lg lg:rounded-lg">
       {slug ? (
         <Link as={`/blog/${slug}`} href="/blog/[slug]">
           <a aria-label={title}>{image}</a>

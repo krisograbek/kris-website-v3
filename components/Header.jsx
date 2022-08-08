@@ -35,9 +35,9 @@ const Header = () => {
 
   return (
     <div className="mx-auto px-10 mb-8">
-      <div className='text-white border-blue-300 border-b flex justify-between px-20 py-2 items-center w-full font-semibold '>
+      <div className='flex justify-between items-center text-white border-blue-300 border-b py-2 w-full'>
         <Link href="/">
-          <div className='cursor-pointer'>
+          <div className='cursor-pointer font-semibold '>
             Home
           </div>
         </Link>
@@ -76,7 +76,7 @@ const Header = () => {
           <ul className='hidden md:flex gap-8 p-2'>
             {categories.map((category) => (
               <Link key={category.slug} href={`/${category.slug}`} >
-                <li className='cursor-pointer'>
+                <li className='cursor-pointer font-semibold '>
                   {category.name}
                 </li>
               </Link>
