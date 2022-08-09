@@ -4,7 +4,7 @@ import { getAllArticles } from '../api/api';
 
 const BlogHome = ({ allArticles }) => {
   return (
-    <div className="container mx-auto flex flex-col min-h-screen items-center py-20 px-10">
+    <div className="flex flex-col min-h-screen items-center py-20">
       <Blog articles={allArticles} />
     </div>
   )

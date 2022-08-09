@@ -6,13 +6,15 @@ import Link from 'next/link';
 
 const ArticlePage = ({ article }) => {
   return (
-    <div className='pb-32 pt-10 container mx-auto px-10'>
-      <Link href="/blog">
-        <div className='text-pink-400 font-bold mb-16 hover:underline cursor-pointer'>
-          Back to articles
-        </div>
-      </Link>
-      <ArticleDetails article={article} />
+    <div className='pb-32 pt-10 container mx-auto px-10 max-w-screen-lg'>
+      <div className='flex flex-col justify-center items-center mx-auto w-full md:w-3/4 lg:w-2/3'>
+        <Link href="/blog">
+          <div className='text-pink-400 font-bold mb-16 hover:underline cursor-pointer self-start'>
+            Back to articles
+          </div>
+        </Link>
+        <ArticleDetails article={article} />
+      </div>
     </div>
   )
 }
