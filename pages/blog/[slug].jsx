@@ -2,10 +2,16 @@ import React from 'react'
 import { getAllArticles, getArticleBySlug } from '../api/api';
 import markdownToHtml from '../api/markdownToHTML';
 import { ArticleDetails } from '../../components';
+import Link from 'next/link';
 
 const ArticlePage = ({ article }) => {
   return (
-    <div className='py-32'>
+    <div className='pb-32 pt-10 container mx-auto px-10'>
+      <Link href="/blog">
+        <div className='text-pink-400 font-bold mb-16 hover:underline cursor-pointer'>
+          Back to articles
+        </div>
+      </Link>
       <ArticleDetails article={article} />
     </div>
   )

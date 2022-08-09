@@ -35,6 +35,11 @@ const ArticleCard = ({ article }) => {
         </div>
       </div>
       <p className='text-center text-lg text-gray-700 font-normal px-4 lg:p-8 mb-8'>{article.excerpt}</p>
+      <Link as={`/blog/${article.slug}`} href="/blog/[slug]">
+        <p className='text-right text-lg text-pink-600 font-normal px-4 hover:underline cursor-pointer'>
+          See more...
+        </p>
+      </Link>
     </div>
   )
 }

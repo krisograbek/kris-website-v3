@@ -2,17 +2,28 @@
   @apply text-lg leading-relaxed;
 }
 
-.markdown p,
-.markdown ul,
-.markdown ol,
-.markdown blockquote {
+.markdown ol {
   @apply my-6;
 }
 
-.markdown h2 {
+.markdown blockquote {
+  @apply border-l-4 pl-6 my-6 italic
+}
+
+.markdown ul,
+.markdown p {
+  @apply my-3;
+}
+
+.markdown h2,
+.markdown h1 {
   @apply text-3xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown li::before {
+  /* content: "•"; */
 }

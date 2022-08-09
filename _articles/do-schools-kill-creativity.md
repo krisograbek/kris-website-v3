@@ -11,8 +11,6 @@ ogImage:
 ---
 
 # Do Schools Kill Creativity?
-Tags: #creativity #education [[Ken Robinson]]
-
 
 Ken's Ted Talk in 2006.
 
@@ -24,10 +22,9 @@ Ken's claims:
  - Current educational system was built to **meet the needs of industrialism**.
  - **Many kids don't think they are talented, because schools don't value their skills**.
  - Degrees don't mean anything.
- - 
 
 
-Three thinks about intelligence:
+Three characteristics of intelligence:
  - **Diverse**
  - **Dynamic**
  - **Distinct**
@@ -40,8 +37,8 @@ Three thinks about intelligence:
 
 "We get educated out of the creativity."
 
-"Many highly talented, brilliant, creative people think they're not, because the think they were good at school wasn't valued, or was actually stigmatized (piętnowany)."
+> "Many highly talented, brilliant, creative people think they're not, because the think they were good at school wasn't valued, or was actually stigmatized."
 
 
-#todo Doesn't [[Seth Godin]] have a talk about the same subject? He claimed there that textbooks are boring, etc.
+Tags: #creativity #education [[Ken Robinson]]
 

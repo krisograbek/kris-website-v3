@@ -19,6 +19,8 @@ const Header = () => {
   const menuRef = useRef();
   const btnRef = useRef();
 
+  const responsiveNavStyle = 'flex flex-col items-center fixed inset-0 top-16 left-1/4 bg-black/30 backdrop-blur-md pt-12 md:hidden z-10'
+
   // if menu doesn't work properly, it's probably somewhere here
   useEffect(() => {
     const closeDropdown = e => {
@@ -35,7 +37,7 @@ const Header = () => {
 
   return (
     <div className="mx-auto px-10 mb-8">
-      <div className='flex justify-between items-center text-white border-blue-300 border-b py-2 w-full'>
+      <div className='flex justify-between items-center text-white border-blue-300 border-b pt-2 pb-4 w-full'>
         <Link href="/">
           <div className='cursor-pointer font-semibold '>
             Home
@@ -82,7 +84,7 @@ const Header = () => {
               </Link>
             ))}
           </ul>
-          <ul ref={menuRef} className={showMenu ? 'flex flex-col items-center fixed inset-0 top-12 left-1/4 bg-gray-300 pt-8 md:hidden' : 'hidden'}>
+          <ul ref={menuRef} className={showMenu ? 'flex flex-col items-center fixed inset-0 top-16 left-1/4 bg-black/30 backdrop-blur-md pt-12 md:hidden z-10' : 'hidden'}>
             {categories.map((category) => (
               <Link key={category.slug} href={`/${category.slug}`} >
                 <li className='cursor-pointer px-2 py-4 border-solid border-t w-full text-center' onClick={() => setShowMenu(false)}>
