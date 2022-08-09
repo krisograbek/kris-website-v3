@@ -36,7 +36,6 @@ const Header = () => {
   });
 
   return (
-    // <div className="container mx-auto max-w-screen-lg px-10 mb-8">
     <div className='flex justify-between items-center text-white border-blue-300 border-b pt-2 pb-4 w-full'>
       <Link href="/">
         <div className='cursor-pointer font-semibold '>
@@ -97,7 +96,6 @@ const Header = () => {
         </ul>
       </nav>
     </div >
-    // </div>
   )
 }
 

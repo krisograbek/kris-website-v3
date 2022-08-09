@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { HomePage } from '../components'
 
 const Home = () => {
   return (
@@ -7,9 +8,7 @@ const Home = () => {
         <title>Kris Ograbek</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex min-h-screen flex-col items-center justify-center py-2">
-        <h3 className=''>Main Page</h3>
-      </div>
+      <HomePage />
     </div>
   )
 }
