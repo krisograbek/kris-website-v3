@@ -3,7 +3,7 @@ import { About } from '../../components';
 
 const AboutHome = () => {
   return (
-    <div className="flex flex-col min-h-screen items-center py-40">
+    <div className='pb-32 pt-20 container mx-auto max-w-screen-lg text-white'>
       <About />
     </div>
   )

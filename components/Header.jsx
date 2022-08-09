@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const categories = [
   { slug: "blog", name: "Blog" },
-  { slug: "projects", name: "Projects" },
+  // { slug: "projects", name: "Projects" },
   { slug: "about", name: "About" },
   // { slug: "journal", name: "Journal" },
   // { slug: "fav-quotes", name: "Favorite Quotes" },
@@ -18,6 +18,8 @@ const Header = () => {
 
   const menuRef = useRef();
   const btnRef = useRef();
+
+  const responsiveNavStyle = 'flex flex-col items-center fixed inset-0 top-16 left-1/4 bg-black/30 backdrop-blur-md pt-12 md:hidden z-10'
 
   // if menu doesn't work properly, it's probably somewhere here
   useEffect(() => {
@@ -34,10 +36,13 @@ const Header = () => {
   });
 
   return (
-    <div className='fixed bg-gray-300 flex justify-between px-20 py-2 items-center w-full font-semibold '>
-      <div className=''>
-        Home
-      </div>
+    // <div className="container mx-auto max-w-screen-lg px-10 mb-8">
+    <div className='flex justify-between items-center text-white border-blue-300 border-b pt-2 pb-4 w-full'>
+      <Link href="/">
+        <div className='cursor-pointer font-semibold '>
+          Home
+        </div>
+      </Link>
       <nav>
         <button ref={btnRef} className="md:hidden mt-2" onClick={() => setShowMenu(!showMenu)}>
           {showMenu ? (
@@ -73,13 +78,13 @@ const Header = () => {
         <ul className='hidden md:flex gap-8 p-2'>
           {categories.map((category) => (
             <Link key={category.slug} href={`/${category.slug}`} >
-              <li className='cursor-pointer'>
+              <li className='cursor-pointer font-semibold '>
                 {category.name}
               </li>
             </Link>
           ))}
         </ul>
-        <ul ref={menuRef} className={showMenu ? 'flex flex-col items-center fixed inset-0 top-12 left-1/4 bg-gray-300 pt-8 md:hidden' : 'hidden'}>
+        <ul ref={menuRef} className={showMenu ? 'flex flex-col items-center fixed inset-0 top-16 left-1/4 bg-black/30 backdrop-blur-md pt-12 md:hidden z-10' : 'hidden'}>
           {categories.map((category) => (
             <Link key={category.slug} href={`/${category.slug}`} >
               <li className='cursor-pointer px-2 py-4 border-solid border-t w-full text-center' onClick={() => setShowMenu(false)}>
@@ -92,6 +97,7 @@ const Header = () => {
         </ul>
       </nav>
     </div >
+    // </div>
   )
 }
 

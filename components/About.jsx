@@ -3,8 +3,8 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='flex flex-col px-20 gap-12'>
-      <div className=''>
+    <div className='flex flex-col justify-center items-center mx-auto w-full'>
+      <div className='mb-8'>
         <Image src='/me_gray.JPG' alt='me' width="360" height="270" />
       </div>
       <div className='flex flex-col flex-1 gap-8'>

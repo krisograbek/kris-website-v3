@@ -1,18 +1,11 @@
-import Link from 'next/link';
-import React from 'react'
-import { ArticleCard, Blog } from '../../components';
+import React from 'react';
+import { Blog } from '../../components';
 import { getAllArticles } from '../api/api';
 
 const BlogHome = ({ allArticles }) => {
   return (
-    <div className="flex flex-col min-h-screen items-center py-40">
-      <Blog />
-      {allArticles.map((article) => (
-        <div key={article.slug}>
-          <ArticleCard article={article} />
-        </div>
-      ))}
-
+    <div className="flex flex-col min-h-screen items-center py-20">
+      <Blog articles={allArticles} />
     </div>
   )
 }
