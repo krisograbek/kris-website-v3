@@ -28,17 +28,17 @@ const HomePage = () => {
         <h3 className='text-3xl mx-auto mb-6'>Coming soon...</h3>
         <div className='grid grid-cols-1 md:grid-cols-12'>
           <div className='col-span-1 md:col-span-4 md:mx-4'>
-            <NavCard slug="blog">
+            <NavCard slug="summaries">
               Book summaries
             </NavCard>
           </div>
           <div className='col-span-1 md:col-span-4 md:mx-4'>
-            <NavCard slug="about">
+            <NavCard slug="projects">
               Personal Projects
             </NavCard>
           </div>
           <div className='col-span-1 md:col-span-4 md:mx-4'>
-            <NavCard slug="about">
+            <NavCard slug="tips">
               Learning Tips
             </NavCard>
           </div>

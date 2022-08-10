@@ -7,5 +7,7 @@ export { default as ArticleHeader } from './Blog/ArticleHeader';
 export { default as ArticleDetails } from './Blog/ArticleDetails';
 export { default as RecentArticles } from './Blog/RecentArticles';
 export { default as Projects } from './Projects';
+export { default as Tips } from './Tips';
+export { default as Summaries } from './Summaries';
 export { default as HomePage } from './Home/HomePage';
 export { default as NavCard } from './Home/NavCard';
