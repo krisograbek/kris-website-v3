@@ -7,8 +7,8 @@ const HomePage = () => {
       <h2 className='font-bold text-4xl mb-3'>Kris Ograbek</h2>
       <h3 className='font-bold text-3xl mb-6'>Lifelong Learner & Content Creator</h3>
       <div className='w-full md:w-2/3 border-solid border-2 border-blue-300 rounded-lg p-4 mb-32'>
-        <h4 className='font-bold text-2xl'>
-          I believe in Lifelong Learning. If you take care of your brain, you'll be able to learn everythin in any age.
+        <h4 className='font-bold text-xl'>
+          I believe in Self Education. Taking control over own knowledge and skills is the best long-term investment.
         </h4>
       </div>
       <div className='container max-w-screen-lg mx-auto flex flex-col justify-center mb-12'>

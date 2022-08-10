@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutAuthor from '../AboutAuthor';
 import ArticleCard from './ArticleCard';
 import RecentArticles from './RecentArticles';
 
@@ -13,7 +14,8 @@ const Blog = ({ articles }) => {
         ))}
       </div>
       <div className='lg:col-span-4 col-span-1'>
-        <RecentArticles />
+        <AboutAuthor />
+        {/* <RecentArticles /> */}
       </div>
     </div>
   )

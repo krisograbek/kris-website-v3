@@ -1,6 +1,7 @@
 export { default as Layout } from './Layout';
 export { default as Header } from './Header';
 export { default as About } from './About';
+export { default as AboutAuthor } from './AboutAuthor';
 export { default as Blog } from './Blog/Blog';
 export { default as ArticleCard } from './Blog/ArticleCard';
 export { default as ArticleHeader } from './Blog/ArticleHeader';
