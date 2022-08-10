@@ -1,7 +1,7 @@
 import React from 'react'
 import { getAllArticles, getArticleBySlug } from '../api/api';
 import markdownToHtml from '../api/markdownToHTML';
-import { ArticleDetails } from '../../components';
+import { AboutAuthor, ArticleDetails } from '../../components';
 import Link from 'next/link';
 
 const ArticlePage = ({ article }) => {
@@ -14,6 +14,9 @@ const ArticlePage = ({ article }) => {
           </div>
         </Link>
         <ArticleDetails article={article} />
+        <div className='my-8'>
+          <AboutAuthor />
+        </div>
       </div>
     </div>
   )
