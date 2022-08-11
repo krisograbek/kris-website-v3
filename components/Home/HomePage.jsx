@@ -1,5 +1,21 @@
 import React from 'react'
-import NavCard from './NavCard'
+import NavCard from './NavCard';
+import Github from '../svgs/github.svg';
+import Linkedin from '../svgs/linkedin.svg';
+import Medium from '../svgs/medium.svg';
+import Twitter from '../svgs/twitter.svg';
+import StackOverflow from '../svgs/stackoverflow.svg';
+import YouTube from '../svgs/youtube.svg';
+import Link from 'next/link';
+
+const icons = [
+  { name: "linkedin", component: Linkedin, link: 'https://www.linkedin.com/in/kris-ograbek' },
+  { name: "twitter", component: Twitter, link: 'https://twitter.com/KrisOgrabek' },
+  { name: "medium", component: Medium, link: 'https://medium.com/@kris-ograbek' },
+  { name: "youtube", component: YouTube, link: 'https://www.youtube.com/channel/UCyi_Df2NF35qjIV0LdtUY9w' },
+  { name: "github", component: Github, link: 'https://github.com/krisograbek' },
+  { name: "stackoverflow", component: StackOverflow, link: 'https://stackoverflow.com/users/15191870/krisograbek' },
+]
 
 const HomePage = () => {
   return (
@@ -11,7 +27,7 @@ const HomePage = () => {
           I believe in Self Education. Taking control over own knowledge and skills is the best long-term investment.
         </h4>
       </div>
-      <div className='container max-w-screen-lg mx-auto flex flex-col justify-center mb-12'>
+      <div className='container max-w-screen-lg mx-auto flex flex-col justify-center my-20'>
         <h3 className='text-3xl mx-auto mb-6'>Explore the website</h3>
         <div className='grid grid-cols-1 md:grid-cols-12'>
           <div className='col-span-1 md:col-span-6 my-2 md:mx-4'>
@@ -26,7 +42,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className='container max-w-screen-lg mx-auto flex flex-col justify-center'>
+      <div className='container max-w-screen-lg mx-auto flex flex-col justify-center my-20'>
         <h3 className='text-3xl mx-auto mb-6'>Coming soon...</h3>
         <div className='grid grid-cols-1 md:grid-cols-12'>
           <div className='col-span-1 md:col-span-4 my-2 md:mx-4'>
@@ -44,6 +60,22 @@ const HomePage = () => {
               Learning Tips
             </NavCard>
           </div>
+        </div>
+      </div>
+      {/* Icons */}
+      <div className='mx-auto flex flex-col justify-center my-20'>
+        <h3 className='text-3xl mx-auto mb-6'>Connect with me</h3>
+        <div className='my-6 flex'>
+          {icons.map((icon) => {
+            const Icon = icon.component;
+            return (
+              <a key={icon.name} href={icon.link} target='_blank' rel='noreferrer noopener'>
+                <div className='mx-2 h-8 w-8 cursor-pointer'>
+                  <Icon fill="white" />
+                </div>
+              </a>
+            )
+          })}
         </div>
       </div>
     </div >
