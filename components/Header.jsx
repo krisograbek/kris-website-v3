@@ -4,8 +4,9 @@ import Link from 'next/link';
 
 const categories = [
   { slug: "blog", name: "Blog" },
-  // { slug: "projects", name: "Projects" },
+  { slug: "summaries", name: "Summaries" },
   { slug: "about", name: "About" },
+  // { slug: "projects", name: "Projects" },
   // { slug: "journal", name: "Journal" },
   // { slug: "fav-quotes", name: "Favorite Quotes" },
 ]

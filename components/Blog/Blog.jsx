@@ -1,7 +1,5 @@
-import React from 'react'
 import AboutAuthor from '../AboutAuthor';
 import ArticleCard from './ArticleCard';
-import RecentArticles from './RecentArticles';
 
 const Blog = ({ articles }) => {
   return (

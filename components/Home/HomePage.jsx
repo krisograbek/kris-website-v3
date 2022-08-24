@@ -1,12 +1,10 @@
-import React from 'react'
-import NavCard from './NavCard';
 import Github from '../svgs/github.svg';
 import Linkedin from '../svgs/linkedin.svg';
 import Medium from '../svgs/medium.svg';
-import Twitter from '../svgs/twitter.svg';
 import StackOverflow from '../svgs/stackoverflow.svg';
+import Twitter from '../svgs/twitter.svg';
 import YouTube from '../svgs/youtube.svg';
-import Link from 'next/link';
+import NavCard from './NavCard';
 
 const icons = [
   { name: "linkedin", component: Linkedin, link: 'https://www.linkedin.com/in/kris-ograbek' },
