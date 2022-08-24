@@ -7,6 +7,9 @@ const SummaryCard = ({ summary }) => {
       <Link as={`/summaries/${summary.slug}`} href="/summaries/[slug]">
         {summary.slug}
       </Link>
+      <div>
+        Hi {summary.excerpt}
+      </div>
     </div>
   )
 }

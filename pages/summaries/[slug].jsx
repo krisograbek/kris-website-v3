@@ -6,7 +6,7 @@ const SummaryPage = ({ summary }) => {
   return (
     <div>
       Title: {summary.title}
-      {summary.slug}
+      {summary.content}
     </div>
   )
 }

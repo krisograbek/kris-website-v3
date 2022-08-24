@@ -80,10 +80,8 @@ export function getAllArticles(fields = []) {
 
 export const getAllSummaries = (fields = []) => {
   const slugs = getSlugs(summariesDirectory);
-  console.log('slugs', slugs)
   const summaries = slugs
     .map((slug) => getSummaryBySlug(slug, fields));
 
-  console.log(summaries)
   return summaries;
 }

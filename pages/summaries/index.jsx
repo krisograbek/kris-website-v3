@@ -16,7 +16,11 @@ export default SummariesHome;
 export const getStaticProps = async () => {
   const allSummaries = getAllSummaries([
     'title',
-    'slug'
+    'slug',
+    'year',
+    'author',
+    'excerpt',
+    'coverImage'
   ]);
 
   return {
