@@ -1,12 +1,12 @@
 import React from 'react'
+import { SummaryDetails } from '../../components';
 import { getAllSummaries, getSummaryBySlug } from '../api/api';
 import markdownToHtml from '../api/markdownToHTML';
 
 const SummaryPage = ({ summary }) => {
   return (
     <div>
-      Title: {summary.title}
-      {summary.content}
+      <SummaryDetails summary={summary} />
     </div>
   )
 }

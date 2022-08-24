@@ -11,6 +11,7 @@ export { default as Projects } from './Projects';
 export { default as Tips } from './Tips';
 export { default as Summaries } from './Summaries/Summaries';
 export { default as SummaryCard } from './Summaries/SummaryCard';
+export { default as SummaryDetails } from './Summaries/SummaryDetails';
 export { default as HomePage } from './Home/HomePage';
 export { default as NavCard } from './Home/NavCard';
 export { default as MarkdownComponent } from './MarkdownComponent';

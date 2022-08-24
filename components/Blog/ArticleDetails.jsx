@@ -9,7 +9,6 @@ const ArticleDetails = ({ article }) => {
         <img src={article.coverImage} alt="cover Image" className='rounded-lg w-full' />
       </div>
       <MarkdownComponent content={article.content} />
-
     </div>
   )
 }
