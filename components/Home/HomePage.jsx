@@ -28,12 +28,17 @@ const HomePage = () => {
       <div className='container max-w-screen-lg mx-auto flex flex-col justify-center my-20'>
         <h3 className='text-3xl mx-auto mb-6'>Explore the website</h3>
         <div className='grid grid-cols-1 md:grid-cols-12'>
-          <div className='col-span-1 md:col-span-6 my-2 md:mx-4'>
+          <div className='col-span-1 md:col-span-4 my-2 md:mx-4'>
             <NavCard slug="blog">
               Blog
             </NavCard>
           </div>
-          <div className='col-span-1 md:col-span-6 my-2 md:mx-4'>
+          <div className='col-span-1 md:col-span-4 my-2 md:mx-4'>
+            <NavCard slug="summaries">
+              Book summaries
+            </NavCard>
+          </div>
+          <div className='col-span-1 md:col-span-4 my-2 md:mx-4'>
             <NavCard slug="about">
               About me
             </NavCard>
@@ -43,11 +48,11 @@ const HomePage = () => {
       <div className='container max-w-screen-lg mx-auto flex flex-col justify-center my-20'>
         <h3 className='text-3xl mx-auto mb-6'>Coming soon...</h3>
         <div className='grid grid-cols-1 md:grid-cols-12'>
-          <div className='col-span-1 md:col-span-4 my-2 md:mx-4'>
+          {/* <div className='col-span-1 md:col-span-4 my-2 md:mx-4'>
             <NavCard slug="summaries">
               Book summaries
             </NavCard>
-          </div>
+          </div> */}
           <div className='col-span-1 md:col-span-4 my-2 md:mx-4'>
             <NavCard slug="projects">
               Personal Projects

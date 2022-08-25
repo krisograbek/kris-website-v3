@@ -25,13 +25,13 @@ const ArticleCard = ({ article }) => {
       </Link>
       <div className="max-w-2xl mx-auto">
         <div className="block text-center items-center justify-center mb-3 w-full">
-          <div className="flex items-center justify-center">
-            <Image src={article.author.picture} className="rounded-full" width="40" height="40" alt={article.author.name} />
-            <div className="inline font-semibold pl-4">{article.author.name}</div>
-          </div>
           <div className='pt-2'>
             {parseDate(article.date)}
           </div>
+          {/* <div className="flex items-center justify-center">
+            <Image src={article.author.picture} className="rounded-full" width="40" height="40" alt={article.author.name} />
+            <div className="inline font-semibold pl-4">{article.author.name}</div>
+          </div> */}
         </div>
       </div>
       <p className='text-center text-lg text-gray-700 font-normal px-4 py-2 mb-2'>{article.excerpt}</p>
