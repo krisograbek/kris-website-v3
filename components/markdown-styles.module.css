@@ -7,7 +7,7 @@
 }
 
 .markdown blockquote {
-  @apply border-l-4 pl-6 my-6 italic
+  @apply border-l-4 pl-6 py-[1px] italic
 }
 
 .markdown ul,
@@ -17,13 +17,13 @@
 
 .markdown h2,
 .markdown h1 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl mt-12 mb-4 font-semibold leading-snug;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl mt-8 mb-4 font-semibold leading-snug;
 }
 
 .markdown li::before {
-  /* content: "•"; */
+  content: "• ";
 }
