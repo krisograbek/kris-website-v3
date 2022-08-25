@@ -16,11 +16,10 @@ export default SummaryPage;
 export const getStaticProps = async ({ params }) => {
   const summary = getSummaryBySlug(params.slug, [
     'title',
-    'date',
+    'year',
     'slug',
     'author',
     'content',
-    'ogImage',
     'coverImage',
   ]);
   const content = await markdownToHtml(summary.content || '')
