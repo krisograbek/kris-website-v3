@@ -5,7 +5,7 @@ import MarkdownComponent from '../MarkdownComponent';
 const ArticleDetails = ({ article }) => {
   return (
     <div className='text-white '>
-      <div className='text-3xl mb-8'>
+      <div className='text-2xl md:text-3xl mb-8'>
         {article.title}
       </div>
       <div className='mb-8 md:flex md:justify-center'>

@@ -26,7 +26,6 @@ const Header = () => {
   useEffect(() => {
     const closeDropdown = e => {
       if ((!menuRef.current.contains(e.target)) && (!btnRef.current.contains(e.target))) {
-        console.log(e)
         setShowMenu(false);
       }
     }
