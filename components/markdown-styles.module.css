@@ -12,8 +12,9 @@
 
 .markdown ul,
 .markdown p {
-  @apply my-3;
+  @apply my-3
 }
+
 
 .markdown h2,
 .markdown h1 {
