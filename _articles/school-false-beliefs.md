@@ -6,8 +6,6 @@ date: "2022-08-23"
 author:
   name: Kris
   picture: "/me_gray.JPG"
-ogImage:
-  url: "/assets/blog/school-false-beliefs/cover.jpg"
 ---
 
 I've learned a lot during my 17 years of education. As a student, I landed my first engineering job. So school gave me a start in my professional career.
