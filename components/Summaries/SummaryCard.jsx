@@ -9,7 +9,7 @@ const SummaryCard = ({ summary }) => {
         <div className='md:flex-auto relative h-60'>
           <Image src={summary.coverImage} alt="cover Image" layout='fill' objectFit='contain' />
         </div>
-        <div className='md:w-2/3 flex flex-col justify-center'>
+        <div className='md:w-2/3 flex flex-col justify-center text-center md:text-left'>
           <div className='text-2xl pb-2'>
             {summary.title}
           </div>

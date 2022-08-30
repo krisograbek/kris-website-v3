@@ -3,17 +3,20 @@
 }
 
 .markdown ol {
+  list-style-type: decimal;
+  list-style-position: inside;
   @apply my-6;
 }
 
 .markdown blockquote {
-  @apply border-l-4 pl-6 py-[1px] italic
+  @apply border-l-4 pl-6 py-[1px] italic my-8
 }
 
 .markdown ul,
 .markdown p {
-  @apply my-3;
+  @apply my-3
 }
+
 
 .markdown h2,
 .markdown h1 {
@@ -28,6 +31,13 @@
   @apply text-xl mt-8 mb-4 leading-snug;
 }
 
-.markdown li::before {
+.markdown ul>li::before {
   content: "• ";
+}
+
+.markdown ol>li {
+  /* I need the margin because the numbers in my list go to the left.
+  I applied list-style-position:inside; and don't need margin
+  */
+  /* margin-left: 20px; */
 }

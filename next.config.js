@@ -2,11 +2,11 @@
 module.exports = {
   reactStrictMode: true,
   distDir: 'build',
-  experimental: {
-    images: {
-      unoptimized: true
-    },
-  },
+  // experimental: {
+  //   images: {
+  //     unoptimized: true
+  //   },
+  // },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,

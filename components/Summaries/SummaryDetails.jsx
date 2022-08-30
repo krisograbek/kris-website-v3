@@ -6,11 +6,11 @@ import MarkdownComponent from '../MarkdownComponent';
 const SummaryDetails = ({ summary }) => {
   return (
     <div className='text-white pt-32 '>
-      <div className='flex gap-6 pb-12 border-b border-blue-300 '>
+      <div className='flex flex-col md:flex-row gap-6 pb-12 border-b border-blue-300 '>
         <div className='flex-auto relative h-60'>
           <Image src={summary.coverImage} alt="cover Image" layout='fill' objectFit='contain' />
         </div>
-        <div className='w-2/3 flex flex-col justify-center'>
+        <div className='w-full md:w-2/3 flex flex-col justify-center text-center md:text-left'>
           <div className='text-2xl pb-2'>
             {summary.title}
           </div>

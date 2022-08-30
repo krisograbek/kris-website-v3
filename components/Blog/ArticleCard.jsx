@@ -1,14 +1,12 @@
-import moment from 'moment';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const ArticleCard = ({ article }) => {
   const parseDate = dateStr => (
-    new Date(dateStr).toLocaleDateString('en-US', { day: "numeric", month: 'long', year: 'numeric' })
+    new Date(dateStr).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
   )
   return (
     <div className='bg-white shadow-lg rounded-lg p-0 lg:p-6 pb-6 mb-6'>
-      <div className='relative overflow-hidden shadow-md pb-[20rem] mb-6'>
+      <div className='relative overflow-hidden shadow-md  pb-[20rem] mb-6'>
         <Link as={`/blog/${article.slug}`} href="/blog/[slug]">
           <img
             src={article.coverImage}
@@ -19,7 +17,7 @@ const ArticleCard = ({ article }) => {
       </div>
       <Link as={`/blog/${article.slug}`} href="/blog/[slug]">
         <h1 className='transition duration-300 text-center cursor-pointer 
-      mb-4 hover:text-pink-600 text-3xl font-semibold'>
+      mb-4 hover:text-pink-600 text-2xl font-semibold px-1 md:px-0'>
           {article.title}
         </h1>
       </Link>
@@ -34,7 +32,7 @@ const ArticleCard = ({ article }) => {
           </div> */}
         </div>
       </div>
-      <p className='text-center text-lg text-gray-700 font-normal px-4 py-2 mb-2'>{article.excerpt}</p>
+      <p className=' text-center text-lg text-gray-700 font-normal px-4 py-2 mb-2'>{article.excerpt}</p>
       <Link as={`/blog/${article.slug}`} href="/blog/[slug]">
         <p className='text-right text-lg text-pink-600 font-normal px-4 hover:underline cursor-pointer'>
           Read more...
